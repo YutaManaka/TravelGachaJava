@@ -28,6 +28,8 @@ English follows Japanese.
     - []()
 2. 実装
     - [Spring BootにDBマイグレーションツール「flyway」を導入する](https://smallit.co.jp/blog/687/)
+    - [【Spring Boot】リソースに配置した画像を表示する](https://itechblog.hatenablog.com/entry/2021/02/19/2021-02-19-125700/)
+    - [Spring Boot + MySQLで CRUD RESTfulなエンドポイントを実装する方法](https://devil-code.com/blogs/Java/springboot-restful/)
     - []()
 3. 素材
     - [地球の画像](https://usagif.com/ja/kaiten-suru-chikyu-no-gif/)
@@ -58,6 +60,8 @@ If you click Gacha button, the app select your destination randomly.
     - []()
 2. Development
     - [Spring BootにDBマイグレーションツール「flyway」を導入する](https://smallit.co.jp/blog/687/)
+    - [【Spring Boot】リソースに配置した画像を表示する](https://itechblog.hatenablog.com/entry/2021/02/19/2021-02-19-125700/)
+    - [Spring Boot + MySQLで CRUD RESTfulなエンドポイントを実装する方法](https://devil-code.com/blogs/Java/springboot-restful/)
     - []()
 3. Images
     - [地球の画像](https://usagif.com/ja/kaiten-suru-chikyu-no-gif/)
