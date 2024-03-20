@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+ #Java
+ java:
+  container_name: JavaTest
+  image: openjdk:21
+  ports:
+   # 既に使用しているポートは避ける
+   - 8081:8080
+  volumes:
+   - ./:/srv:cached
+  # 用意したSpring Bootプロジェクト
+  working_dir: /
+  # コンテナが消えないようにtrueを設定
+  tty: true
+
+
+ #MYSQL
+ mysql :
+  container_name: MysqlTest
+  image: mysql:latest
+  command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+  environment:
+    MYSQL_ROOT_PASSWORD: rootPass
+    MYSQL_DATABASE: test_database
+    MYSQL_USER: testUser
+    MYSQL_PASSWORD: testPass
+    TZ: 'Asia/Tokyo'
+  #データを保管するためにボリュームを指定する
+  volumes:
+    - ./db/data:/var/lib/mysql
+  #MySQLのデフォルトポートは「3306」だが、既に使用している場合は、別の値を使用する
+  ports:
+    - '3307:3306'
