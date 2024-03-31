@@ -25,7 +25,9 @@
                 th:src="@{/img/globe.gif}"
                 style="width: 480px;">
         </div>
-        <span style="font-size: 64px; line-height: 64px; align-content: center;">{{destination}}</span>
+        <span
+            th:text="${destination}"
+            style="font-size: 64px; line-height: 64px; align-content: center;"/>
         <span style="font-size: 32px;">です！</span>
         <div style="padding: 16px;"/>
         <form>
