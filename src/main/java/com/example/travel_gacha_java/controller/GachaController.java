@@ -1,4 +1,4 @@
-package com.example.travel_gacha_java.Controller;
+package com.example.travel_gacha_java.controller;
 
 import com.example.travel_gacha_java.Service.GachaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,13 +20,20 @@ public class GachaController {
 
 	// レコード作成
 	@PostMapping("/create")
-    public String createGacha(@RequestParam String name) {
-        gachaService.saveGacha(name);
-				return "form";
+	public String createGacha(@RequestParam String name) {
+			gachaService.saveGacha(name);
+			return "form";
 	}
 
 	// 目的地を取得
+	@GetMapping("/destination")
+	public String getDestination() {
+		String destination_name = gachaService.getDestination();
 
-	// 再度ガチャ
-
+		// 未使用レコードがない場合、エラーページへ遷移
+		if (destination_name == "") {
+			return "error";
+		}
+		return "destination";
+	}
 }
