@@ -1,13 +1,6 @@
 package com.example.travel_gacha_java.Model;
 
-// import javax.persistence.*;
-// import javax.persistence.GeneratedValue;
-// import javax.persistence.GenerationType;
-// import javax.persistence.Id;
-
 import jakarta.persistence.*;
-// import jakarta.persistence.Entity;
-// import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "Gacha")
